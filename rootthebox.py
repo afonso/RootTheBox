@@ -243,7 +243,7 @@ define("recaptcha_api_key",
 
 # Database settings
 define("sql_dialect",
-       default="mysql",
+       default="sqlite",
        group="database",
        help="define the type of database (mysql|postgres|sqlite)")
 
@@ -366,7 +366,7 @@ define("team_sharing",
        type=bool)
 
 define("min_user_password_length",
-       default=12,
+       default=8,
        group="game",
        help="min user password length",
        type=int)
@@ -378,7 +378,7 @@ define("banking",
        type=bool)
 
 define("max_password_length",
-       default=7,
+       default=8,
        group="game",
        help="max bank password length",
        type=int)

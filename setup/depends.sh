@@ -19,10 +19,10 @@
 # #########################
 current_path="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-if [[ "$EUID" != "0" ]]; then
-  echo "[!] This script must be run as root." 1>&2
-  exit 1
-fi
+# if [[ "$EUID" != "0" ]]; then
+#   echo "[!] This script must be run as root." 1>&2
+#   exit 1
+# fi
 
 # -y flag will be passed to this variable for a non-interactive setup.
 SKIP=""
@@ -67,9 +67,9 @@ elif [[ ${OSTYPE} == "darwin14" ]]; then
   brew update
 
   echo "Brew install package..."
-  brew install python mysql memcached libmemcached zlib	
+  brew install python mysql memcached libmemcached zlib
 
-fi	
+fi
 
 echo "[*] Installing python libs..."
 
