@@ -199,7 +199,7 @@ define("debug",
        type=bool)
 
 define("autostart_game",
-       default=False,
+       default=True,
        group="application",
        help="start the game automatically",
        type=bool)

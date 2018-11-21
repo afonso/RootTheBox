@@ -53,8 +53,8 @@ from hashlib import sha512, sha1
 
 ### Settings
 __version__ = '0.1.0'
-__domain__  = 'game.rootthebox.com'
-__port__    = '80'
+__domain__  = 'capiroto.gs2w.tk'
+__port__    = '8888'
 __path__    = 'botnet/connect'
 
 if platform.system().lower() in ['linux', 'darwin']:
@@ -956,7 +956,7 @@ def main(domain, port, user, garbage_path, secure, verbose):
 ##############################################################################
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
-        description='Root the Box: Botnet',
+        description='GS2W: Botnet',
     )
     parser.add_argument('--version',
         action='version',
